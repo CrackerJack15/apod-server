@@ -7,6 +7,8 @@ require("dotenv").config();
 app.use(express.json());
 
 // Temp
+const cors = require("cors");
+app.use(cors());
 
 // Security
 app.use(helmet());
